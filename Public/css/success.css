@@ -1,0 +1,84 @@
+@import "base.css";
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background:#f7f7f7;
+    align-items: flex-end;
+}
+header{
+    width:100%;
+    height:2.66rem;
+    background:url("../../img/submit-header-bg.png") center/cover;
+}
+.top{
+    width: 100%;
+    height:0.4rem;
+    background: url("../../img/top-bar.png") no-repeat center/cover;
+}
+header>div:last-of-type{
+    width:100%;
+    height:2.26rem;
+    padding:0.5rem 0.24rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+header a:first-of-type{
+    background: url("../../img/at_04.png") no-repeat center/cover;
+}
+header>div:last-of-type > p{
+    font-size: 0.34rem;
+    color: #ffffff;
+}
+.wrapper{
+    width:100%;
+    height:4.47rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper img{
+    width: 2.82rem;
+    height:3.43rem;
+}
+.wrapper div{
+    width:3.37rem;
+    height:0.82rem;
+    background: #ffffff;
+    border-radius:0.5rem;
+    border:0.1rem solid #efefef;
+    color:#ff318e;
+    font-size: 0.28rem;
+    text-align: center;
+    line-height: 0.62rem;
+}
+footer{
+    width:100%;
+    height:2.88rem;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer > a{
+    width: 5.9rem;
+    height: 1rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    background: url("../../img/sub2.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height:0.9rem;
+    border:1px solid #fff;
+
+}

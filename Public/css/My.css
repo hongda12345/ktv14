@@ -1,0 +1,189 @@
+@import "base.css";
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background:url("../../img/gbj.png") center/cover;
+    padding:0 0.24rem;
+    align-items: flex-end;
+}
+header{
+    width:100%;
+    height:1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header a{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+header a:first-of-type{
+    background: url("../../img/at_04.png") no-repeat center/cover;
+}
+header > p{
+    font-size: 0.26rem;
+    color: #ffffff;
+    text-align: center;
+}
+.wrapper{
+    width:100%;
+    height:11rem;
+    background: #ffffff;
+    padding:0.8rem 0.24rem 0;
+    /*overflow: hidden;*/
+    position: relative;
+    top:calc(0.4rem + 1rem);
+    border-radius:0.07rem;
+}
+.wrapper .touxiang{
+    width:1.6rem;
+    height:1.6rem;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px purple;
+    position: absolute;
+    top:-0.88rem;
+    right:0.5rem;
+    /*overflow: hidden;*/
+}
+.wrapper .touxiang .write{
+    width:0.4rem;
+    height: 0.4rem;
+    background: url('../../img/songsmusic.png') no-repeat center/cover;
+    background-size: 0.8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0.05rem;
+    right:0.05rem;
+}
+.wrapper .name{
+    width:1.38rem;
+    height:0.88rem;
+    /*background: deepskyblue;*/
+    position: absolute;
+    top:-0.88rem;
+    right:2.1rem;
+    padding:0.2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.wrapper .name span{
+    font-size: 0.18rem;
+    color:#fff;
+}
+.wrapper .touxiang img{
+    display: block;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.wrapper .desc{
+    width:3rem;
+    height: 0.95rem;
+    position: absolute;
+    right:0.44rem;
+    top:1.25rem;
+}
+.wrapper .desc P{
+    font-size: 0.18rem;
+    text-align: right;
+    color:#23B0FC;
+}
+.wrapper .desc P:last-child{
+    color:#000;
+    margin-top: 0.05rem;
+}
+.wrapper .dingdan{
+    width:100%;
+    height: 1.24rem;
+    /*background: red;*/
+    position: absolute;
+    top:2.58rem;
+    left:0;
+    padding:0 0.18rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .dingdan li{
+    width:2.1rem;
+    height: 100%;
+    border-radius: 0.07rem;
+    /*background: blue;*/
+    position: relative;
+    box-shadow: 0 0 3px 1px #ccc;
+}
+.wrapper .dingdan li a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.wrapper .dingdan li a p:first-child{
+    position: absolute;
+    font-size: 0.35rem;
+    color: #FF2988;
+    top:0.4rem;
+    left: 0.3rem;
+}
+.wrapper .dingdan li a p:nth-child(2){
+    position: absolute;
+    font-size: 0.25rem;
+    color: #23B0FC;
+    top:0.5rem;
+    left: 1rem;
+}
+.wrapper .dingdan li a p:last-child{
+    position: absolute;
+    font-size: 0.16rem;
+    color: #575EFF;
+    bottom:0.2rem;
+    left: 0.3rem;
+}
+.wrapper .zuopin{
+    width:100%;
+    height: 0.56rem;
+    position: absolute;
+    top:4.23rem;
+    left:0;
+    padding:0 0.18rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.wrapper .zuopin p:first-child{
+    font-size: 0.28rem;
+    color: #F81F86;
+}
+.wrapper .zuopin p:last-child{
+    font-size: 0.18rem;
+    color: #575EFF;
+}
+.scroll{
+    width:100%;
+    height:auto;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    top:4.8rem;
+    left:0;
+    padding: 0 0.24rem;
+}
+.scroll>li{
+    width:100%;
+    height:1.17rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding:0.32rem 0;
+}
+.scroll>li p:first-child{
+    font-size: 0.24rem;
+    color: #89919E;
+}
+.scroll>li p:last-child{
+    font-size: 0.16rem;
+    color: #C6C6C6;
+}

@@ -1,0 +1,335 @@
+@import "base.css";
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background:url("../../img/sjbj.png") center/cover;
+    padding:0.4rem 0.24rem 0;
+    align-items: flex-end;
+}
+header{
+    width:100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+header a{
+    width: 0.4rem;
+    height: 0.4rem;
+    font-size:0.24rem;
+    color:#fff;
+}
+header a:last-child{
+    width:0.5rem;
+}
+header a:first-of-type{
+    background: url("../../img/sd10.png") center/cover;
+}
+p{
+    font-size: 0.36rem;
+    color: #fff;
+}
+nav{
+    width:100%;
+    height:1.67rem;
+    /*background: #ccc;*/
+    padding:0.07rem;
+    display: flex;
+    margin:0 auto;
+    position: relative;
+}
+nav .touxiang{
+    width:1.48rem;
+    height:1.48rem;
+    /*background: yellow;*/
+    border:2px solid #fff;
+    border-radius: 0.08rem;
+    position: relative;
+}
+nav .touxiang img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.shadow{
+    width:100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotateZ(15deg);
+    z-index: -1;
+}
+.ziliao{
+    display: flex;
+    flex-direction: column;
+}
+.ziliao .title{
+    flex:1;
+    font-size: 0.24rem;
+    color:#fff;
+    align-items: center;
+    margin-left: 0.2rem;
+}
+.ziliao .title span{
+    color:#fff;
+}
+.ziliao .zuopin{
+    flex:1;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.2rem;
+    width:3rem;
+}
+.song,.mv{
+    width:1.5rem;
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.song span,.mv span{
+    flex:1;
+    font-size: 0.24rem;
+    color:#fff;
+    align-content: flex-start;
+    line-height: 0.5rem;
+}
+.ziliao .zuopin .song .logo1{
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../../img/songsmusic.png") no-repeat center/cover;
+}
+.ziliao .zuopin .mv .logo2{
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../../img/songsvideo.png") no-repeat center/cover;
+}
+.song span img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.tips{
+    flex:1;
+    font-size: 0.24rem;
+    color:#fff;
+    align-items: center;
+    margin-left: 0.2rem;
+}
+.tips span{
+    color:#fff;
+}
+.wrapper{
+    width:100%;
+    height: 9.3rem;
+    /*background: #fff;*/
+    padding:0 0;
+    overflow: hidden;
+    position:absolute;
+    top:calc(0.24rem + 0.88rem + 0.68rem + 1.5rem);
+    z-index:100;
+    opacity: 1;
+}
+.scroll{
+    width:100%;
+    height:auto;
+    padding-bottom: 1.8rem;
+}
+.scroll li{
+    width:calc(4.11rem + 2.88rem);
+    boder-bottom:1px;
+    position: relative;
+    display: flex;
+    background: url("../../img/borderBottom.png") no-repeat bottom;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+}
+.scroll li span{
+    font-size: 0.26rem;
+    color:#ccc;
+}
+.scroll li #xuhao{
+    color:#fc3158;
+}
+.scroll li .son{
+    margin-left: 0.22rem;
+    flex-direction: column;
+    display: flex;
+}
+.scroll li span:first-child{
+    color:#000;
+    margin-bottom: 0.1rem;
+}
+.scroll li span:last-child{
+    color: #ccc;
+}
+.scroll li .add{
+    width:0.4rem;
+    height: 0.4rem;
+    background: url("../../img/add_07.png") no-repeat center/cover;
+    position: absolute;
+    right:0;
+}
+.rotate{
+    transition: 1s;
+    transform: rotate(135deg);
+}
+.thumb{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumb img{
+    width:2.43rem;
+    height:1.6rem;
+}
+.data{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    font-size: 0.2rem;
+    color: #333333;
+}
+.title{
+    flex:1;
+    display: flex;
+    align-items: flex-end;
+}
+.title .hot{
+    margin-left: 0.2rem;
+}
+.price{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+.price span{
+    font-size: 0.28rem;
+    color:#ff318e;
+}
+.price .pricenum{
+    font-weight: 800;
+}
+.option{
+    flex:1;
+    display: flex;
+    align-items: flex-start;
+}
+.option .reduce{
+    width:0.36rem;
+    height:0.36rem;
+    background: url("../../img/subtract.png") no-repeat center/cover;
+}
+.option .count{
+    height:0.36rem;
+    padding:0 0.3rem;
+    border:1px solid #d2d2d2;
+    border-radius: 0.33rem;
+    margin:0 0.15rem;
+}
+.option .plus{
+    width:0.36rem;
+    height:0.36rem;
+    background: url("../../img/plus.png") no-repeat center/cover;
+}
+footer{
+    width:100%;
+    height:2.42rem;
+    background:#fff;
+    /*box-shadow:0 -0.5rem 0.7rem 1rem rgba(248,249,158,0.2);*/
+    border-top:8px solid rgba(248,249,158,0.3);
+    position: fixed;
+    left:0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    padding:0 0.24rem;
+}
+footer>.choose{
+    flex:1;
+    display: flex;
+    font-size: 0.32rem;
+    align-items: center;
+}
+.choose>.chooseList{
+    display: flex;
+    flex:1;
+    align-items: center;
+}
+.choose>.chooseList>div{
+    padding:0.05rem;
+    border:1px solid #e12c7e;
+    background: #ff318e;
+    border-radius: 0.07rem;
+    margin:0 0.18rem;
+    color: #fff;
+}
+.choose>.more{
+    width:0.5rem;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.choose>.more.active{
+    visibility: visible;
+}
+.choose>.more>span{
+    display: block;
+    width:0.12rem;
+    height: 0.12rem;
+    background:blue;
+    border-radius: 50%;
+}
+.choose>.more>span:first-child{
+    background:#ff318e;
+}
+.choose>.more>span:nth-child(2){
+    background:#FF83BB;
+}
+.choose>.more>span:nth-child(3){
+    background:#FFD6E8;
+}
+.choose>li>span{
+    color:#fff;
+    font-size: 0.22rem;
+}
+.bottom{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom>.total{
+    flex:1;
+    display: flex;
+    align-items: baseline;
+
+}
+.bottom>.total>span{
+    color:#ff318e;
+    font-size:0.34rem;
+}
+.bottom>.total>.totalNum{
+    font-size: 0.38rem;
+}
+.bottom>.total>span:last-of-type{
+    font-size: 0.18rem;
+}
+.bottom>a{
+    flex:1;
+    width:3.62rem;
+    height: 0.82rem;
+    text-align: center;
+    line-height: 0.82rem;
+    font-size: 0.26rem;
+    color:#fff;
+    background: url("../../img/button01.png") center/cover;
+
+}

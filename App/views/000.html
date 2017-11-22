@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*let str='ab12cd3456ef78g9';
+    let arr=[];
+    let res='';
+    for(let i=0;i<str.length;i++){
+        if(str[i]>=0&&str[i]<=9){
+            res+=str[i];
+        }else{
+            if(res){
+                arr.push(res);
+                res='';
+            }
+        }
+    }
+    if(res){
+        arr.push(res);
+        res='';
+    }*/
+    ////////正则///////////////////////////////////////////////////////////////////////
+    /*let reg=/\d+/g;
+    let arr=str.match(reg);
+    console.log(arr);*/
+    ///////创建正则对象的两种方法////////////////////////////////////////
+    /*let reg=/a/;
+    let reg1=new RegExp('a');
+    let str='abcdef';
+    console.log(reg.test(str));//返回布尔值
+    console.log(reg.exec(str));//返回数组*/
+//    let str='a12bc3d456efg78';
+//    let reg=/[0,1,2,3,4,5,6,7,8,9]/;
+//    let reg=/[q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m]/;
+//    let reg=/[0-9][0-9]/g;//g:模式修正符，全局匹配。继续往下走。
+//    let reg=/[0-9a-zA-Z]{6}/;//{}:量词 重复6次
+   /* let reg=/<[a-z][a-z1-6]{0,8}>/;//第二位最少0次，最多8次
+//    let res=reg.exec(str);
+    console.log(reg.test('<span>'));*/
+//   let phone=/[0-9]{11}/
+   /* let sfz=/[0-9]{17}[0-9X]/;
+    let zs='142631199605054513';
+    console.log(sfz.test(zs));*/
+    //邮箱验证
+    //一串数字字母 @ 一串数字字母 \. 一串数字字母
+    /*for (let i = 0; i < 3; i++) {
+        setTimeout(function () { 
+            console.log(i); 
+        }
+        , 3000); 
+    }*/
+/*var nub=200;
+function aa(){
+  console.log(nub);//undefined
+  var nub=300;
+  console.log(nub);//300
+}
+aa();
+console.log(nub);//200*/
+/*var str='name';
+var obj={
+  name:'lisi',
+  age:12,
+}
+console.log(obj.str);//undefined
+console.log(obj[str])//lisi
+console.log(obj['str'])//undefined*/
+/*function fun (name,age){
+      this.name=name;
+      this.age=age;
+    }
+    var obj={}
+    fun.call(obj)
+    console.log(fun.name)//fun*/
+    /*var arr=[1,5,10,13];
+    var result=map(arr,function(value){
+        return value%3;
+    })
+    console.log(result);
+    function map(arr,fn){
+        var newarr=[];
+        for(i=0;i<arr.length;i++){
+            newarr[newarr.length]=fn(arr[i]);
+        }
+        return newarr;
+    }*/
+    /*function jiecheng(n){
+        if(n==1){
+            return 1;
+        }else{
+            return jiecheng(n-1)*n;
+        }
+    }
+    alert(jiecheng(5));*/
+    /*var arr = [1,222,44,3,55,56,223,545];
+    var newArr = arr.sort(function(a,b){
+        return a>b;
+    });
+    console.log(newArr);*/
+    /*var obj=[
+     {id:10,name:'lisi'},
+     {id:4,name:"wangwu"},
+     {id:9,name:"wangsan"},
+    ];
+    let result=obj.sort(function(a,b){
+        return a.id-b.id;
+    })
+    console.log(result);*/
+    /*let str="a12bc3d456ef78";
+    let reg=/[0-9]/;
+    let reg1=/[^0-9]/;//取反
+    let reg2=/\d/;
+    let reg3=/\D/;//取反
+    let reg4=/[0-9a-z_]/;
+    let reg4=/\w/;
+    let reg4=/\W/;//取反*/
+    /*let qq=/[1-9]\d{4,9}/;
+    console.log(qq.test('1020864884'));
+    let email=/\w+@\w+\.\w+/;
+    let reg=/亚索|剑豪/g;
+    let content='亚索且随疾风前行，亚索身后一许流星';
+    console.log(content.replace(reg,'****'));
+    let phone=/\(?\d{4}\)?\d{7}/;
+    let str='<b>这是b</b>';
+//    let html=/<([a-zA-Z0-9]+)>(.*)<\/[a-zA-Z0-9]>/;
+    let html=/<(?:[a-zA-Z0-9]+)>(.*)<\/\1>/;
+    console.log(html.exec(str));*/
+    /*let num=/a.*?b/;
+    let str='abaabaaabaaaabaaaab';//贪婪匹配
+    console.log(num.exec(str));*/
+   /* let str='ab12cd345ef6789';
+    console.log(str.match(/\d+/g));
+    console.log(str.split(/a-zA-Z+g/));
+    console.log(str.search(/[a-z]/g));
+    let reg=/js/i;*/
+    let reg=/^hello$/gim;
+    str='hello\n';
+    console.log(reg.test(str));
+    console.log(reg.exec(str))
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商店</title>
+    <script src="/php/ktv/Public/js/rem.js"></script>
+    <link rel="stylesheet" href="/php/ktv/Public/css/singers.css">
+    <script src="/php/ktv/Public/js/jquery.js"></script>
+    <script src="/php/ktv/Public/js/singers.js"></script>
+    <script src="/php/ktv/Public/js/iscroll.js"></script>
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()"></a>
+    <p class="sname">内地偶像歌手</p>
+    <a></a>
+</header>
+<nav>
+    <div class="wine active">
+        <span>歌手</span>
+    </div>
+    <div class="snack">
+        <span>排行</span>
+    </div>
+    <div class="snack">
+        <span>常唱</span>
+    </div>
+    <div class="snack">
+        <span>推荐歌单</span>
+    </div>
+</nav>
+<div class="search">
+    <input type="text" placeholder="请输入您要搜索的歌手">
+</div>
+<div class="wrapper singerslist">
+<ul class="scroll active">
+    <?php for($i=0;$i<count($data);$i++){;?>
+    <li>
+        <a href="/php/ktv/index.php/songs?rid=<?php echo $data[$i]['rid']?>">
+            <img src="<?php echo $data[$i]['rimg']?>" alt="">
+            <div class="singer">
+                <span class="rname"><?php echo $data[$i]['rname']?></span>
+                <span class="rnum">(<?php echo $data[$i]['rnum']?>)</span>
+            </div>
+        </a>
+    </li>
+    <?php }?>
+    <!--<li>
+        <img src="/php/ktv/img/singer-06.png" alt="">
+        <div class="singer">
+            <span class="rname">周杰伦</span>
+            <span class="rnum">(555)</span>
+        </div>
+    </li>
+    <li>
+        <img src="/php/ktv/img/singer-06.png" alt="">
+        <div class="singer">
+            <span class="rname">周杰伦</span>
+            <span class="rnum">(555)</span>
+        </div>
+    </li>
+    <li>
+        <img src="/php/ktv/img/singer-06.png" alt="">
+        <div class="singer">
+            <span class="rname">周杰伦</span>
+            <span class="rnum">(555)</span>
+        </div>
+    </li>
+    <li>
+        <img src="/php/ktv/img/singer-06.png" alt="">
+        <div class="singer">
+            <span class="rname">周杰伦</span>
+            <span class="rnum">(555)</span>
+        </div>
+    </li>
+    <li>
+        <img src="/php/ktv/img/singer-06.png" alt="">
+        <div class="singer">
+            <span class="rname">周杰伦</span>
+            <span class="rnum">(555)</span>
+        </div>
+    </li>&ndash;&gt;-->
+</ul>
+</div>
+</body>
+</html>
